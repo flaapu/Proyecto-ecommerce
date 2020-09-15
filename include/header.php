@@ -29,8 +29,8 @@
             <a style="background: white" class="dropdown-item" href="#">• Juguetes</a>
             <a style="background: white" class="dropdown-item" href="#">• Peluches</a>
             <a style="background: white" class="dropdown-item" href="#">• Muñecas</a>
-            <a style="background: white" class="dropdown-item" href="#">• Tu vieja</a>
-            <a style="background: white" class="dropdown-item" href="#">• Jueguetes sexuales</a>
+            <a style="background: white" class="dropdown-item" href="#">• Más cosas</a>
+            <a style="background: white" class="dropdown-item" href="#">• OFERTAS!</a>
          </div>
         </div>
 

@@ -354,6 +354,8 @@ header {
 
 
 .foot{
+
+
     width: 100%;
     height: 150px;
     position: relative;
@@ -380,6 +382,7 @@ header {
     top: 15px;
     left: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 .texto-copyright p{
@@ -502,7 +505,7 @@ header {
 
 
 /*----------------------INTENTO DE RESOLUCION -------------------------*/
-
+/*ARREGLAR PORQUE NO ENTIENDO NADA*/
 
 @media (min-width: 320px){
     .bordetexto{
@@ -524,4 +527,5 @@ header {
         font-size: 30px;
     }
 }
+
 

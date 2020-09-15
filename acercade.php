@@ -15,7 +15,8 @@
                 <div class="conteiner-ad">
                     <div class="ad">
                         <h1>Acerca de FLAAPU S.R.L.</h1>
-                        <p> Somos una organización sin fines de lucro que busca el bien común en la socieNNNDEEEA QUE DECÍA, que se yo bro, estoy probanding
+                        <p> 
+                        Probando probando 1 2 3, esto es un simulacro de pagina web lalalala holaaaaas
                         </p>
                     </div>
                 </div>     

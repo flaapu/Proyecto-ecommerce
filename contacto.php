@@ -19,7 +19,7 @@
         <section class="bordetexto">
             <br>
         
-            <?php echo "<p>En el marco de la emergencia sanitaria (COVID-19) y mientras dure el aislamiento social, preventivo y <br> obligatorio no se realizará atención presencial ni telefónica quedando disponibles sólo los <br> canales electrónicos.</p>"      ?>
+            <?php echo "<p>En el marco de la emergencia sanitaria (COVID-19) y mientras dure el aislamiento social, preventivo y <br> obligatorio no se realizará atención presencial, quedando disponibles sólo los <br> canales electrónicos y telefónicos.</p>"      ?>
         </section>
 
         <section class="bloquecontacto">
