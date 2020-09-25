@@ -7,7 +7,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #e4e1b0;
-    background-image: url("../img/fondo.png");
+    background-image: url("../img/fondo-achicado.png");
 
     
 }
@@ -33,8 +33,8 @@ body {
     width: 100%;
     height: 400px;
     position: relative;
-    background-image: url("../img/portada1.png");
-    background-size: 150%;
+    background-image: url("../img/portada.png ");
+    background-size: 100%;
     background-repeat: no-repeat;
     animation: movimiento 45s infinite linear alternate;
 }
@@ -352,7 +352,44 @@ header {
 
 /*---------------------------------------------FOOTER---------------------------------------------*/
 
+.conteiner-cr{
+    width: 100%;
+    height: auto;
+    background: #02686b;
+    bottom: 0;
+    color: white;
+}
 
+.conteiner-cr a{
+    color: #f38d9e;
+}
+
+.conteiner-cr a:hover{
+    color: #ff637d;
+}
+
+.conteiner-midbox{
+    width: 100%;
+    height: 180px;
+    background:#07898d;
+    color: black;
+
+}
+
+.conteiner-midbox a{
+    color: #f38d9e;
+}
+
+.conteiner-midbox a:hover{
+    color: #ff637d;
+}
+
+.conteiner-searching{
+    background: #66d7d1;
+    opacity: 0.8;
+
+}
+/*
 .foot{
 
 
@@ -412,7 +449,7 @@ header {
 .texto-contacto a:hover{
     color: #f38d9e;
 }
-
+*/
 /*-----------------------------------------------------CONTACTO-----------------------------------------------------*/
 .bordetexto{
     width: 65%;
