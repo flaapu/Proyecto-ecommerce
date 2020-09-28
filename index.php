@@ -21,7 +21,7 @@ echo $_SERVER['DOCUMENT_ROOT'];
         <section class="fondoindex">
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" style="color: #F4F1BB" href="iniciarsesion.php">Iniciar sesion</a>
+                <a class="nav-link" style="color: #F4F1BB" href="login-registro.php">Iniciar sesion</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: #F4F1BB" href="registrarse.php">Registrate</a>

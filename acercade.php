@@ -19,13 +19,15 @@
                         Probando probando 1 2 3, esto es un simulacro de pagina web lalalala holaaaaas
                         </p>
                     </div>
-                </div>     
-       
+                </div>   
+                
+        </div>
+        
 
         <br>
         <br>
-        <img width="300" height="300" src="img/spin.png"> 
-        </div>
+        <!--<img width="300" height="300" src="img/spin.png"> -->
+        
         
         <br>
         <br>
@@ -45,7 +47,9 @@
         <br>
         <br>
         
-        <?php include 'include/footer.php';?>
+        <hr>
+    
+    <hr>
+    <?php include 'include/footer.php';?>
     </body>
-
     
