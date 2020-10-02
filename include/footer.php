@@ -29,9 +29,9 @@
         <div class="col-md-3 col-sm-6">
           <div class="single-footer">
         <h3> Soporte</h3>
-        <li><a href=""><i class="fa fa-long-arrow-right"></i>Productos FAQs</a></li>
-        <li><a href=""><i class="fa fa-long-arrow-right"></i>Politicas</a></li>
-        <li><a href=""><i class="fa fa-long-arrow-right"></i>Contacto</a></li>
+        <li><a href="./productosfaqs.php"><i class="fa fa-long-arrow-right"></i>Productos FAQs</a></li>
+        <li><a href="./terminosycondiciones.php"><i class="fa fa-long-arrow-right"></i>Politicas</a></li>
+        <li><a href="./contacto.php"><i class="fa fa-long-arrow-right"></i>Contacto</a></li>
           </div>
         </div>
         <!--FIN SOPORTES-->
@@ -61,6 +61,7 @@
     </div>
   </div>
 
+  <hr>
   <!--BUSCADOR-->
   <!--CONTAINER-->
   <div class="container">
@@ -74,13 +75,14 @@
         </div>
 
         <div class="col-md-6 mb-4">
-
-          <form class="input-group">
-            <input type="text" class="form-control form-control-sm" placeholder="Ingresa tu usuario o email" aria-label="Ingresa tu usuario o email" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="buttons-2" type="button">Ingresar</button>
-            </div>
-          </form>
+          <div class="boton-footer">
+            <form class="input-group">
+              <input type="text" class="form-control form-control-sm" placeholder="Ingresa tu usuario o email" aria-label="Ingresa tu usuario o email" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <input class="buttons3" type="button" name="loginfooter" value="Ingresar"></button>
+              </div>
+            </form>
+          </div>
         </div>
       <!--ROW-->
       </div>

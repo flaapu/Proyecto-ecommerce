@@ -26,10 +26,11 @@
             </div>
           </button>
          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a style="background: white" class="dropdown-item" href="#">• Juguetes</a>
-            <a style="background: white" class="dropdown-item" href="#">• Peluches</a>
-            <a style="background: white" class="dropdown-item" href="#">• Muñecas</a>
-            <a style="background: white" class="dropdown-item" href="#">• Más cosas</a>
+            <a style="background: white" class="dropdown-item" href="#">• Gomitas</a>
+            <a style="background: white" class="dropdown-item" href="#">• Chocolates</a>
+            <a style="background: white" class="dropdown-item" href="#">• Malvaviscos</a>
+            <a style="background: white" class="dropdown-item" href="#">• Caramelos</a>
+            <a style="background: white" class="dropdown-item" href="#">• Más cositas</a>
             <a style="background: white" class="dropdown-item" href="#">• OFERTAS!</a>
          </div>
         </div>

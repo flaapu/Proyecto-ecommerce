@@ -149,7 +149,7 @@ h2 {
     .form-login p{
         height: 40px;
         text-align: center;
-        border-bottom: 1px solid;
+        
     }
 
     .form-login a{
@@ -174,7 +174,6 @@ h2 {
     }
    
     .buttons{
-        
         width: 100%;
         height: 40px;
         background: #ff637d;
@@ -202,11 +201,28 @@ h2 {
         padding: 11px 10px;
     }
 
+    /*CAPTCHA BOTON RECARGA*/
+    #btn_recargar{
+        width: 80px;
+        height: auto;
+        background: #ff637d;
+        justify-content: center;
+        color: black;
+        margin-bottom: 16px;
+        border: 1px wavy black;
+        border-radius: 20px 20px;
+        transition: background 300ms;
+    }
+    #btn_recargar:hover{
+        background: #f38d9e;
+        color: #53222a;
+    }
+    
     /*---------------------------------------------REGISTRARSE----------------------------------------------*/
 
     .form-login2{
-        width: 1200px;
-        height: 900px;
+        width: 900px;
+        height: 700px;
         background: #66d7d1;
         opacity: 0.8;
         color: white;
@@ -214,7 +230,7 @@ h2 {
         border-radius: 50px;
         margin: auto;
         box-shadow: 7px 13px 37px #000;
-        font-size: 18px;
+        font-size: 15px;
     }
     
     .centrando{
@@ -238,10 +254,19 @@ h2 {
         background: #cae4e2;
     }
 
-    .checkin{
-        position: relative;
-        text-align: center;
-        bottom: 10px;
+    #btn_recargar2{
+        width: 150px;
+        height: 40px;
+        background: #ff637d;
+        color: black;
+        border: 1px solid #F4F1BB;
+        margin:auto;
+        margin-bottom: 16px;
+        transition: background 300ms;
+    }
+    #btn_recargar2:hover{
+        background: #f38d9e;
+        color: #53222a;
     }
 
     /*---------------------------------------------RECUPERAR CONTRASEÑA---------------------------------------------*/
@@ -354,6 +379,7 @@ header {
 
 .footer {
     position: relative;
+
     
 }
 #footer-area{
@@ -362,6 +388,7 @@ header {
     color: white;
     position: absolute;
     width: 100%;
+    
 }
 
 .footer-social{
@@ -399,17 +426,19 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer-social li a{
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    background: #000;
+.single-footer li a{
+    color: #f38d9e;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer-social li a i{
-    color: #fff;
-    padding: 8px;
+.single-footer li a:hover{
+    color: #913a48;
+    text-decoration: underline;
 }
+
 
 .widget li{
     float: left;
@@ -418,8 +447,9 @@ header {
 
 .widget li a img{
     margin-bottom: -10px;
-    width: 100%;
-    height: 70px;
+    width: 80%;
+    height: 100px;
+
 }
 
 .copyright-area{
@@ -433,69 +463,22 @@ header {
     font-weight: 600;
     color: white;
 }
-
-
-/*
-.foot{
-
-
-    width: 100%;
-    height: 150px;
-    position: relative;
-    bottom: 0;
-    background: #913a48;
-    border-top: 1px solid #ff637d;
-    border-width: medium;
-    border-bottom: 1px solid #ff637d;
-    border-radius: 200px;
-    margin-top: 5%; 
-
-}
-
-.contacto{
-    text-align: right;
-    margin-right: 5%;
-    display: inline-block;
-}
-
-
-.texto-copyright{
-    width: 100%;
-    position: relative;
-    top: 15px;
-    left: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: justify;
-}
-
-.texto-copyright p{
+/*boton*/
+.buttons3{
+    width: auto;
+    height: auto;
+    background: #ff637d;
+    opacity: 0.8;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #913a48;
     color: white;
-    margin-top: 15px;
-    font-size: 15px;
+    transition: background 300ms;
 }
 
-.texto-contacto{
-    width: 100%;
-    position: relative;
-    top: 15px;
-    left: 10px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.buttons3:hover{
+    background: #f38d9e;
+    color: #913a48;
 }
-
-.texto-contacto p{
-    color: white;
-    margin-top: 15px;
-}
-
-.texto-contacto a{
-    color: white;
-}
-
-.texto-contacto a:hover{
-    color: #f38d9e;
-}
-*/
 /*-----------------------------------------------------CONTACTO-----------------------------------------------------*/
 .bordetexto{
     width: 65%;
@@ -555,7 +538,7 @@ header {
 
 .fondo-ad{
     width: 100%;
-    height: auto;
+    height: 400px;
     position: absolute;
     background: -webkit-linear-gradient(top, #66d7d1, #eaf2e3);
     opacity: 0.7;
@@ -590,4 +573,28 @@ header {
 
 /*----------------------INTENTO DE RESOLUCION -------------------------*/
 
+/*----------------------------------------------------TERMINOS Y PRIVACIDAD-------------------------------------------------------*/
 
+.terminos{
+    width: auto;
+    height: auto;
+    background: #609c48;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.terminos h3{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.texto{
+    text-align: left;
+}
+ 
+
+/*-----------------------------------------------CAPTCHA--------------------------------------------------------------*/

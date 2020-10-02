@@ -14,9 +14,11 @@
           <div class="fondo-ad">
                 <div class="conteiner-ad">
                     <div class="ad">
-                        <h1>Acerca de FLAAPU S.R.L.</h1>
+                        <h1>Acerca de Candy Shop S.R.L.</h1>
                         <p> 
-                        Probando probando 1 2 3, esto es un simulacro de pagina web lalalala holaaaaas
+                        Somos una empresa mayorista y minorista que se dedica a la venta de productos dulces altos en glucosa, de esos que te acercan cada vez más a la diabetes. <br>
+                        Nuestro nombre se inspiro en la canción de 50 cent o 50 centavos. <br> Bienvenides, compren mucho asi nos enriquecemos nosotrxs. <br>
+                        Gracias, vuelvas prontos dijo Apus Nahasapeemapetilon. ♥<br>
                         </p>
                     </div>
                 </div>   
