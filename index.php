@@ -1,6 +1,15 @@
 <!--
 echo $_SERVER['DOCUMENT_ROOT'];
 -->
+<?php
+    session_start();
+        //error_reporting(0); una vez que termino el proyecto, activarlo.
+        $varsesion = $_SESSION['usuario'];
+        if($varsesion == null || $varsesion == ''){
+            echo 'Usted no tiene autorización';
+            die();
+        }
+?>
 <!doctype html>
 
 <html lang = "es" dir = "ltr">

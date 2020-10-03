@@ -62,6 +62,7 @@
                 
                 if(!isset($_SESSION) && (array_key_exists("error",$_SESSION))){
                     echo $_SESSION['error'];
+                    
                 }
         ?>
 
