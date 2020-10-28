@@ -1,78 +1,72 @@
 <?php
-
-/*CONEXION CON SQL
-    session_start();
-    $nombre = $_POST['usuario'];
-    $clave = $_POST['contraseña'];
-
-    //conectar a la base de datos
-    $conexion = mysqli_connect("localhost", "root", "", "bddcandyshop");
-    $consulta="SELECT *FROM usuario WHERE usuario='$usuario' and clave='$clave'";
-
-    $resultado = mysqli_query($conexion, $consulta);
-    $filas = mysqli_num_rows($resultado);
-
-    if($filas>0){
-        header("Location:../hombre.php");
-    }
-        else{
-            echo "Error en la autentificación";
-        }
-    
-    mysqli_free_result($resultado);
-    mysqli_close($conexion);
-
-
-FIN CONEXION CON SQL*/
 /* SESSIONES */
-if(!isset($_SESSION)){
-    session_start();
+session_start();
+
+//registrando usuario
+if(isset($_POST['registro'])){
+    $user = $_POST['usrname'];
+    $password = hash('sha256', $_POST['psw']);
+    $passwordrepeat = hash('sha256', $_POST['psw-repeat']);
+    $correo = $_POST['email'];
+    require_once('../modelos/validacionbdd.php');
+    $oUsuario = new Usuario();
+    
+    if(!empty($user))
+    {
+        if(!empty($password)&&(!empty($passwordrepeat)))
+        {
+            if($password == $passwordrepeat)
+            {
+                if(!empty($correo)){
+                    $oUsuario->setUsuario($user);
+                    $oUsuario->setPassword($password);
+                    $oUsuario->setEmail($correo);
+                    $oUsuario->save(); //compruebo las contraseñas si son iguales, guardo los datos y sino, me tira una alerta.
+                    
+                }else{
+                    echo "Ingresa un correo, por favor";
+                }
+            }
+            else{
+                echo "<script>alert('contraseñas no coinciden')
+                        window.location='../registrarse.php';</script>";
+            }
+        }
+        else{
+            echo "Ingresa una contraseña, por favor";
+        }  
+    }else{
+        echo "Ingresa un usuario, por favor";
+    }  
 }
 
-$_SESSION['usuario'] = 'fcytuader';
-$_SESSION['contraseña'] = 'asd';
+//logear el usuario
 if(isset($_POST['login']))
 {
-    if (!empty($_POST['captcha_dato']))
+    $usuario = $_POST['usuario'];
+    $password = hash('sha256',$_POST['contraseña']);
+    $captcha = $_POST['captcha_dato'];
+
+    if (!empty($captcha))
     {   
-        if($_SESSION['rand_code'] == $_POST['captcha_dato'])
-        {
-                if ($_SESSION['usuario'] == $_POST['usuario'] && $_SESSION['contraseña'] == $_POST['contraseña'])
-                {
-                        header("Location:../home.php");
-                }else {
-                        header("Location:../iniciarsesion.php");
-                        $_SESSION['error'] = '<e id="f1" class="bienvenida"> Nono, le erraste</e>';}
+        if($_SESSION['rand_code'] == $captcha)
+        { 
+                    require_once('../modelos/validacionbdd.php');
+                    $oUsuario = new Usuario;
+                    $oUsuario->login($usuario, $password);
+                    //$_SESSION['pass'] = $password;
+                        
+        }else{
+            echo "<script>
+                    alert('Captcha Incorrecto')
+                    window.location= '../iniciarsesion.php'
+                 </script>";
         }
+    }else {
+            echo "<script>
+                    alert('Ingrese el captcha para continuar')
+                    window.location= '../iniciarsesion.php'
+                </script>";
     }
 }
-
-                    
-
-   
-   /*
-    if(!isset($_SESSION)){
-        session_start();
-    }
-    if(isset($_POST['login']))
-    {
-        if (!empty($_POST['captcha_dato']))
-        {   
-            if($_SESSION['rand_code'] == $_POST['captcha_dato'])
-            {
-                    if (($_POST['usuario'] == "fcytuader") && ($_POST['contraseña'] == "asd"))
-                    {
-                        header("Location:../home.php"); el header sirve para referenciar
-                        
-                        
-                    }else {
-                        header("Location:../iniciarsesion.php");
-                        $_SESSION['error'] = '<e id="f1" class="bienvenida"> Nono, le erraste</e>';}
-                
-            }else{ 
-                header("Location:../home.php");
-                $_SESSION['error'] = '<e id="f1" class="bienvenida">Pusiste mal el captcha, crack</e>';}
-        }
-    }
-    */
 ?>

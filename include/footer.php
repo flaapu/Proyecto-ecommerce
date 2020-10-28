@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    </head>
-
-<br>
-<br>
-
-
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.js" integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+      </head>
 <body>
 
 <footer>
@@ -21,7 +22,7 @@
         <div class="col-md-3 col-sm 6">
           <div class="single-footer">
           <h3>Sobre Candy Shop</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, modi eaque ullam hic, esse dolore praesentium, iste inventore tenetur animi soluta eius sit sed odit consectetur assumenda doloremque neque! Eaque? .</p>
+          <p>Bueno la verdad no se si entraste a la pestaña de "QUIENES SOMOS" pero ahí te va a decir quienes somos y toda la vaina esa de la que deberia de estar aca un poco más resumido pero me da flojera asi que mejor anda a la pestaña de QUIENES SOMOS, por favor gracias besitos besitos chau chau</p>
           </div>
         </div>
         <!--FIN ABOUT--> 
@@ -62,33 +63,7 @@
   </div>
 
   <hr>
-  <!--BUSCADOR-->
-  <!--CONTAINER-->
-  <div class="container">
-    <!--ROW-->
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <form class="form-inline">
-            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Buscar" aria-label="Buscar">
-            <i class="fas fa-search" aria-hidden="true"></i>
-          </form>
-        </div>
 
-        <div class="col-md-6 mb-4">
-          <div class="boton-footer">
-            <form class="input-group">
-              <input type="text" class="form-control form-control-sm" placeholder="Ingresa tu usuario o email" aria-label="Ingresa tu usuario o email" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <input class="buttons3" type="button" name="loginfooter" value="Ingresar"></button>
-              </div>
-            </form>
-          </div>
-        </div>
-      <!--ROW-->
-      </div>
-  <!--FIN CONTAINER-->
-  </div>
-  <!-- FIN BUSCADOR-->
       <!--COPYRIGHT-->
   <div class="container">
     <div class="row">
@@ -100,14 +75,9 @@
     </div>
         <!--FIN COPYRIGHT-->
   </div>
+
   <!--FIN FOOTER AREA-->
 </footer>
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
 
 </body>  
 

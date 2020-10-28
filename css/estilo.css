@@ -8,25 +8,34 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #e4e1b0;
     background-image: url("../img/fondo-achicado.png");
-
-    
 }
 
 
-/*-----------------------------------------------------------INDEX---------------------------------------------------------*/
+/*---------------------------------------------------------- BARRA DE LOGIN ---------------------------------------------------------*/
 .fondoindex{
     width: 100%;
-    height: 30px;
+    height: 40px;
     background: #913a48;
     border-bottom: 2px wavy #53222a;
     margin: 0;
-    padding: 10px 10px;
+    padding: 0 10px 0 0;
 
 }
 .fondoindex a{
-    font-size: 13px;
-    text-align: right;
-    margin-top: -12px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.btn-shopping{
+    width: 30px;
+    height: 40px;
+    background-color: #913a48;
+    border: none;
+    cursor: pointer;
+}
+.btn-shopping:focus{
+    outline: none;
 }
 /*---------------------------------------------PORTADA---------------------------------------------*/
 .container-portada{
@@ -97,14 +106,99 @@ body {
 
 }
 
+/*-----------------------------------------------------PRODUCTOS------------------------------------------------------------------*/
+.main-content{
+    margin-top:20px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
 
+.content-page{
+    margin:auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 1180px;
+}
+
+.titulo-producto{
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.lista-productos{
+    display: table;
+    width: 100%;
+}
+.box-producto{
+    display: inline-table;
+    padding: 10px;
+    width: 200px; 
+    height: 400px;
+}
+
+.box-producto a{
+    text-decoration: none;
+}
+
+.box-producto a:hover{
+    text-decoration: none;
+    color: #c9576a;
+}
+.producto{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 8px 35px #000;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.producto img{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+.detail-title{
+    padding: 5px;
+    font-size: 19px;
+    color:black;
+    width: calc(100% - 10px);
+    height: 55px;
+}
+.description{
+    font-size: 14px;
+    color:black;
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: 60px;
+}
+.detalle-precio{
+    font-size: 16px;
+    color:black;
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+
+.detalle-precio span{
+    font-size: 12px;
+}
+
+.btn-comprar{
+    width: 110px;
+    height: 40px;
+    background: #ff637d;
+    color: black;
+    
+    transition: background 300ms;
+}
+.btn-comprar:hover{
+    background: #f38d9e;
+    color: #53222a;
+}
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
-h1 {
-    font-family: 'Monoton', cursive;
-    text-align: left;
-    margin-top: 80px;
-    }
+
 
 h2 {
     font-family: 'Monoton', cursive;
@@ -130,6 +224,14 @@ h2 {
     margin: 0;
 }
 
+.error{
+    background: white;
+    color: red;
+    border: 2px solid red;
+    margin: auto;
+
+}
+
     /*---------------------------------------------------LOGIN---------------------------------------------------*/
 .form-login{
     width: 400px;
@@ -139,11 +241,13 @@ h2 {
     border-top: 4px solid #fff87f;
     color: black;
     margin: auto;
-    margin-top: 180px;
-    margin-bottom: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     box-shadow: 7px 13px 37px #000;
     padding: 20px 40px;
-
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
     }
 
     .form-login p{
@@ -201,6 +305,10 @@ h2 {
         padding: 11px 10px;
     }
 
+    .controls:focus{
+        outline: none;
+    }
+
     /*CAPTCHA BOTON RECARGA*/
     #btn_recargar{
         width: 80px;
@@ -221,37 +329,66 @@ h2 {
     /*---------------------------------------------REGISTRARSE----------------------------------------------*/
 
     .form-login2{
-        width: 900px;
-        height: 700px;
+        width: 600px;
+        height: auto;
         background: #66d7d1;
         opacity: 0.8;
         color: white;
         border: 5px solid #ff637d;
         border-radius: 50px;
         margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
         box-shadow: 7px 13px 37px #000;
         font-size: 15px;
+        font-family: 'Advent Pro', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Raleway', sans-serif;
     }
     
     .centrando{
-        margin: 30px;
+        padding: 25px 25px 25px 25px;
+
+    }
+    .centrando h1{
+        color: black;
+        font-family: 'Advent Pro', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
+        
+    }
+    .centrando p{
+        color: black;
     }
 
+
     .centrandoder{
-        text-align: right;
-        margin-right: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    .centrandoder p{
+        color: black;
+
+    }
+
+    .centrandoder a{
+        color: #157c74;
+    }
+
+    .centrandoder a:hover{
+        color: #0d3f38;
     }
 
     .celda{
         width: 100%;
         background: #66d7d1;
         border: none;
-        border-bottom: 1px solid #ff637d;
+        border-bottom: 2px solid #ff637d;
         cursor: pointer;
     }
 
-    .celda:hover{
-        background: #cae4e2;
+    .celda:focus{
+        outline: none;
     }
 
     #btn_recargar2{
@@ -325,49 +462,21 @@ h2 {
 
     /*---------------------------------------------HEADER---------------------------------------------*/
 
-    
-header {
-    width: 100%;
-    position: static;
-    top: 0;
-    color: black;
-    border-top: 1px solid #ff637d;
-    border-bottom: 3px solid #ff637d;
-    margin:auto;
-    margin-bottom: 0;
-    text-align: center;
-    font-family: arial;
-}
-
-.cabeza{
+.lindura{
     width: 100%;
     height: auto;
     background: #ff637d;
-    text-align: right;
-}
-
-.lindura{
-    width: 100%;
-    height: 40px;
-    background: #ff637d;
     color: black;
     border: 0;
-    border-radius: 80px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
 }
 
-.lindura p{
-    height: 20px;
-    text-align: center;
-    
-}
 
 .lindura a{
     color: black;
     text-decoration: none;
     font-size: 15px;
-
 }
 
 .lindura a:hover{
@@ -375,12 +484,64 @@ header {
     text-decoration: wavy;    
 }
 
+.dropdow-menu a{
+    background: #dddbbb;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    background: #742b6d;
+    color: white;
+    transition: 400ms;
+}
+/*buscador*/
+
+
+.search-place{
+    /*width: calc(100% - 500px);*/
+    padding: 2px 20px 1px 20px;
+    height: 38px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    float: right;
+}
+
+.search-place input{
+    font-size: 10px;
+    font-size: 15px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    width: (100% - 62px);
+    font-family: 'Raleway', sans-serif;
+}
+.search-place input:focus{
+    outline: none;
+}
+
+.search-place input:placeholder{
+    color: #ccc;
+    
+}
+
+.btn-main{
+    padding: 7px;
+    font-size: 15px;
+    background-color: #fefefe;
+    border-style: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-search{
+    width: 40px;
+}
+
 /*---------------------------------------------FOOTER---------------------------------------------*/
 
 .footer {
     position: relative;
-
-    
 }
 #footer-area{
     padding: 90px 0 60px 0;
@@ -538,7 +699,7 @@ header {
 
 .fondo-ad{
     width: 100%;
-    height: 400px;
+    height: 60%;
     position: absolute;
     background: -webkit-linear-gradient(top, #66d7d1, #eaf2e3);
     opacity: 0.7;

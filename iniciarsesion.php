@@ -1,6 +1,4 @@
-<?php if(!isset($_SESSION)){session_start(); } ?>
 <!doctype html>
-
 <html lang = "es" dir = "ltr">
     <head>
         <meta charset="utf-8">
@@ -15,18 +13,15 @@
                 });
             });
         </script>
-        <!-- Google font -->
-        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-        
         </head>
     
     <body>
      <form action="php/procesologin.php" method="post">
-        <?php require_once 'include/header.php';?>
+        <?php include 'include/header.php';?>
 
         <section class="form-login">
             <h5>Formulario de Login</h5>
-            <table>
+            <table style="text-align: center">
                 <tr>
                     <input class="controls" type="text" name="usuario" value="" placeholder="Usuario" required>
                 </tr>
@@ -51,21 +46,18 @@
             <p><a href="forgotpw.php">¿Olvidaste tu contraseña?</a></p>
 
             <?php
-            
+                
+
                 if(isset($_POST['login'])){
-                    
-                    $nombre = $_POST['usuario'];
-                    $password = $_POST['contraseña'];
-                    $captcha = $_POST['captcha_dato'];
                     include("php/procesologin.php");
                 }
-                
-                if(!isset($_SESSION) && (array_key_exists("error",$_SESSION))){
-                    echo $_SESSION['error'];
-                    
-                }
-        ?>
-
+               
+               
+                /*if (!isset($_SESSION) && (array_key_exists("error",$_SESSION))){
+                   echo $_SESSION['error'];
+                }*/
+            ?>
+            <hr>
         </section>
 
      </form>

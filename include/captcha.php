@@ -14,10 +14,10 @@ if(!isset($_SESSION)){
     if (empty($_SESSION['rand_code']))
     {
         $captcha = "";
-      $char_permitidos = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      $char_permitidos = "123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ";
         for ($i = 0; $i <= 5; $i++)
         {
-            $captcha .= $char_permitidos{rand(0, 61)};
+            $captcha .= $char_permitidos{rand(0, 58)};
         }
     
     $_SESSION['rand_code'] = $captcha;
