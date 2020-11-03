@@ -1,3 +1,4 @@
+<?php error_reporting(0);?>
 <!doctype html>
 <html lang = "es" dir = "ltr">
     <head>
@@ -49,6 +50,7 @@
                 
 
                 if(isset($_POST['login'])){
+
                     include("php/procesologin.php");
                 }
                

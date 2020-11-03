@@ -27,14 +27,14 @@ body {
     margin: 0;
 }
 
-.btn-shopping{
+.nav-item a img{
     width: 30px;
     height: 40px;
     background-color: #913a48;
     border: none;
     cursor: pointer;
 }
-.btn-shopping:focus{
+.nav-item a img:focus{
     outline: none;
 }
 /*---------------------------------------------PORTADA---------------------------------------------*/
@@ -155,6 +155,10 @@ body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
+.producto a{
+    text-decoration: none;
+}
+
 .producto img{
     width: 100%;
     border-radius: 10px 10px 10px 10px;
@@ -184,18 +188,57 @@ body {
     font-size: 12px;
 }
 
-.btn-comprar{
-    width: 110px;
-    height: 40px;
+.btn-agregar{
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: 20px;
     background: #ff637d;
+    color: white;
+    transition: background 300ms;
+    padding: 3px 5px 3px 5px;
+    text-align: center;
+    margin: auto;
+}
+.btn-agregar:hover{
+    background: #f38d9e;
+    color: #7a5b60;
+}
+
+/*-----------------------------------------------------CARRITO----------------------------------------------------------*/
+.btn-quitar{
+    width: auto;
+    height: auto;
+    background: #84cdf7;
     color: black;
+    border: 1px solid black;
+    padding: 2px 4px 2px 4px;
+    transition: background 300ms;
+    text-align: center;
     
+}
+.btn-quitar:hover{
+    background: #5295cc;
+    color: #53222a;
+    text-decoration: none;
+}
+
+.btn-comprar{
+    width: auto;
+    height: auto;
+    background: #ff637d;
+    border: 1px solid black;
+    padding: 2px 4px 2px 4px;
+    color: black;
     transition: background 300ms;
 }
 .btn-comprar:hover{
     background: #f38d9e;
     color: #53222a;
+    text-decoration: none;
 }
+/*-----------------------------------------------------PROVEEDOR----------------------------------------------------------*/
+
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -203,7 +246,7 @@ body {
 h2 {
     font-family: 'Monoton', cursive;
     text-align: center;
-    margin-top: 80px;
+  
     }
 
 /*------------------------------------------------------- PROCESOLOGIN -------------------------------------------------------*/
@@ -538,7 +581,7 @@ h2 {
     width: 40px;
 }
 
-/*---------------------------------------------FOOTER---------------------------------------------*/
+/*-------------------------------------------------------------FOOTER---------------------------------------------------------------*/
 
 .footer {
     position: relative;

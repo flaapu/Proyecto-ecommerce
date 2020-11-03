@@ -55,12 +55,12 @@
               <!-- buscador-->
             <li class="nav-item">
             <!--form busqueda-->
-            <form action="busqueda.php method="get" class="search-place">
+            
               
                 <input type="text" id="idbusqueda" placeholder="Busca lo que quieras!">
                 <button class="btn-main btn-search" name="busqueda"><i class="fa fa-search" aria-hidden="true"></i></button>
               
-            </form>
+            
             </li>
             
               <!--fin buscador-->

@@ -8,26 +8,29 @@
 
     </head>
     <body>
-
-    
-          <?php include 'include/header.php';?>
+        <?php include 'include/header.php';?>
          
-            
-          Aca iría toda la configuración del usuario :P
+        <?php 
+            if($_SESSION['user'] === 'proveedor'){  
+                include 'proveedor.php';
+            }else{
+                echo"Y bueno, la configuracion en otra ocasión la vamos a tener hecha..";
+            }
+        ?>    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         
 
         <br>
-        <br>
-        <!--<img width="300" height="300" src="img/spin.png"> -->
-        
+        <?php include 'include/footer.php';?>
     
-        
-        <hr>
-    
-    <hr>
-    <?php include 'include/footer.php';?>
-    
-</body>
+    </body>
     
     
 </html>

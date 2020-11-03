@@ -1,4 +1,23 @@
 
 Crolla, Flavia Maria Luisa DNI 39030306
-Ft Mati y Octi que sin ellos todo esto no seria posible
 Numero de grupo: ?
+
+///////////////////////usuarios para conectarse///////////////////////////
+
+User: user_normal
+Pass: unormal1
+
+User: user_modify
+Pass: umodify1
+
+User: user_delete
+Pass: udelete1
+
+
+
+////// ALTAS BAJAS //////
+
+Para poder acceder a la parte de Ingresar productos, hay que logearse con "proveedor" y ahí, en la parte de "configuracion"
+se habilitará la seccion para poder insertar productos o eliminarlos.
+User: proveedor
+Pass: proveedor1

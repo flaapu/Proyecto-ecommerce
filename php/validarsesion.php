@@ -1,5 +1,5 @@
 <?php
-    
+    session_start(); 
         /*error_reporting(0); // una vez que termino el proyecto, activarlo.
         if(isset($_SESSION['user'])){
             include("barra.php");
@@ -8,8 +8,6 @@
             include("barradeslogueado.php");
         }
         */
-        session_start(); 
-
         error_reporting(0); // una vez que termino el proyecto, activarlo.
         $_SESSION['sesioniniciada'] = '0';
 

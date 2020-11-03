@@ -46,10 +46,8 @@ if($_SESSION['sesioniniciada'] != '0')
                 <a class="nav-link" style="color: #F4F1BB" href=<?php echo $actionurl2; ?>><?php echo $action2; ?></a>
             </li>
             <li class="nav-item">
-              <button class="btn-shopping"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="index.php"><img src="./img/shopping-cart.svg" alt=""></a>
             </li>
-
-
         </ul>
 </section>
 </body>

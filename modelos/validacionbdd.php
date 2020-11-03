@@ -9,7 +9,7 @@ class Usuario{
     //constructor y conexion
     public function __construct()
     {   
-        $this->mysqli = new mysqli('localhost', 'root', '', 'candyshopbdd');
+        $this->mysqli = new mysqli('localhost', 'user_normal', 'unormal1', 'candyshopbdd');
 
         $conec = $this->mysqli;
         //error
@@ -58,9 +58,9 @@ class Usuario{
 
         //guardando
         public function save ()
-        {
+        {   $conn = new mysqli('localhost', 'user_modify', 'umodify1', 'candyshopbdd');
             $sql = "INSERT INTO usuarios(username, clave, correoelectronico) VALUES ('$this->username','$this->password','$this->correoelectronico')";
-            $comprobarconexion = $this->mysqli->query($sql);
+            $comprobarconexion = mysqli_query($conn,$sql);
                 if($comprobarconexion)
                 { echo "<script>
                     alert('Te registraste masterrr');
@@ -68,7 +68,7 @@ class Usuario{
                     </script>";}
                 else{
                     echo "<script>
-                    alert('Che salio un error, proba de nuevo');
+                    alert('Che salio un error al guardar tu usuario, proba de nuevo');
                     window.location='../registrarse.php'    
                     </script>";
                 }
@@ -96,88 +96,24 @@ class Usuario{
                 </script>";
             }
         }
-
-
-                   /*$sql = "SELECT * from usuarios WHERE username like '$username' and clave like '$password'";
-            //NO FUNCA
-            $resultado = $this->mysqli->query($sql);
-            if($resultado)
-            { echo "<script>
-                alert('Iniciaste sesion correctamente');
-                window.location='../inicio.php'    
-                </script>";}
-            else{
-                echo "<script>
-                    alert('Mmmm clave o usuario incorrecto');
-                    window.location='../iniciarsesion.php'    
-                    </script>";
-            }*/
-/*
+    //estas 2 funciones no las llamo a ningun lado
+    /*
     public function update($usuarios){
-        $sql="UPDATE usuarios SET usuario='$this->username', contraseña ='$this->password', email='$this->correoelectronico' WHERE usuario = $username";
-        $this->mysqli->query($sql);
+        $conn = new mysqli('localhost', 'user_modify', 'umodify1', 'candyshopbdd');
+        $sql="UPDATE usuarios SET usuario='$this->username', contraseña ='$this->password', email='$this->correoelectronico' WHERE usuario = $usuarios";
+        $conn->query($sql);
         echo "Se ejecuta: <br>";
         echo $sql;
     }
 
     public function delete($idusuarios)
-    {
+    {   $conn = new mysqli('localhost', 'user_delete', 'umdelete1', 'candyshopbdd');
         $sql = "DELETE FROM usuarios WHERE idusuarios = $idusuarios";
-        this->mysqli->query($sql);
+        $conn->query($sql);
         echo "Se ejecuta: <br>";
         echo $sql;
-    }
-*/
-//mysqli_close();
-}
-
-
-// ARRANCO CON LOS PRODUCTOS
-/*Class Productos{
-
-
-    //hago la conexion
-    public function __construct(){
-        $con = new mysqli('localhost','root','', 'candyshopbdd');
-
-        //error
-        if ($con ->connect_errno){
-            echo "Error al conectar con la base de datos";
-            exit();
-        }
-    }
-
-
-    public function mostrarproducto(){
-        $respuesta = new stdClass();
-        //array
-        $datos=[];
-        $i=0;
-        $sql = "SELECT * from productos WHERE stock>=1";
-        $resultado = mysqli_query($con, $sql);
-        //recorro todo el array buscando mi consulta
-        while($row = mysqli_fetch_array($resultado)){
-            $oProducto = new stdClass();
-            $oProducto->codigo_producto = $row['codigo_producto'];
-            $oProducto->nombre_producto = $row['nombre_producto'];
-            $oProducto->descripcion_producto = $row['descripcion_producto'];
-            $oProducto->stock = $row['stock'];
-            $oProducto->precio = $row['precio'];
-            $oProducto->imagen = $row['imagen'];
-
-            $datos[$i]= $oProducto;
-            $i++;
-        }
-        $respuesta->datos=$datos;
-
-        mysqli_close($con);
-        header('Content-Type: application/json');
-        echo json_encode($respuesta);
-        
-    }
-
+    }*/
 
 }
-     */
 
 ?>
